@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calculate{
+    border: 2px solid black;
+    padding: 10px;
+    background: black;
+}
+#screen{
+    margin: 20px;
+    border: 4px solid rgb(255, 252, 252);
+}
+#screen input{
+    width: 100%;
+    padding:10px;
+    outline: none;
+    background: gold;
+    font-weight: 700;
+    font-size: 15px;
+}
+#output{
+    text-align: right;
+}
+#box{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,70px);
+    grid-gap:10px;
+    margin-bottom: 10px;
+}
+#number{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,70px);
+    grid-gap:10px;
+    margin-bottom: 10px;
+}
+#box button,#number button{
+    padding:20px 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25%;
+    background: lightblue;
+}
+#box button:active,#number button:active{
+    background: green;
+}
+#number .red{
+    background-color: red;
+}
+#number .red:active{
+    background-color: red;
+}

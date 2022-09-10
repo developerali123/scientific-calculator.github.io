@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculate">
+        <h1>Scientific calculator</h1>
+        <div id="screen">
+            <input type="text" id="input">
+            <input type="text" id="output" value="0">
+        </div>
+        <div id="box">
+            <button onclick="sqrt()">&#8730;</button>
+            <button onclick="cbrt()">&#8731;</button>
+            <button onclick="square()">x&#178;</button>
+            <button onclick="cube()">x&#179;</button>
+            <button onclick="per()">%</button>
+            <button onclick="inverse()">1/x</button>
+            <button onclick="log()">log</button>
+            <button onclick="ln()">ln</button>
+            <button onclick="factorial()">x&#33;</button>
+            <button value="(" onclick="calculate('(')">(</button>
+            <button value=")" onclick="calculate(')')">)</button>
+            <button onclick="abs()">abs</button>
+            <button onclick="round()">round</button>
+            <button onclick="sine()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+        </div>
+        <div id="number">
+            <button value="7" onclick="calculate('7')">7</button>
+            <button value="8" onclick="calculate('8')">8</button>
+            <button value="9" onclick="calculate('9')">9</button>
+            <button onclick="del()" class="red">C</button>
+            <button onclick="AC()" class="red">AC</button>
+            <button value="4" onclick="calculate('4')">4</button>
+            <button value="5" onclick="calculate('5')">5</button>
+            <button value="6" onclick="calculate('6')">6</button>
+            <button value="*" onclick="calculate('*')">*</button>
+            <button value="/" onclick="calculate('/')">/</button>
+            <button value="1" onclick="calculate('1')">1</button>
+            <button value="2" onclick="calculate('2')">2</button>
+            <button value="3" onclick="calculate('3')">3</button>
+            <button value="+" onclick="calculate('+')">+</button>
+            <button value="-" onclick="calculate('-')">-</button>
+            <button value="0" onclick="calculate('0')">0</button>
+            <button value="00" onclick="calculate('00')">00</button>
+            <button value="." onclick="calculate('.')">.</button>
+            <button onclick="pi()">&#982;</button>
+            <button onclick="equal()">=</button>
+            </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
